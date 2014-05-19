@@ -1,0 +1,15 @@
+{:Hook('support',array('table'=>'weibo','row'=>$weibo['id'],'app'=>'Weibo','uid'=>$weibo['uid']))}
+
+&nbsp;&nbsp;&nbsp;
+<if condition="$weibo['can_delete']">
+    <span class="text-primary weibo-comment-del cpointer" data-weibo-id="{$weibo.id}">
+        <i class="glyphicon glyphicon-trash"></i>
+    </span>
+</if>
+
+
+&nbsp;&nbsp;&nbsp;
+
+<span class="text-primary weibo-comment-link cpointer" data-weibo-id="{$weibo.id}">
+    <i class="glyphicon glyphicon-comment" style="margin-right: 5px"></i><if condition="$weiboCommentTotalCount">{$weiboCommentTotalCount}</if>
+</span>
